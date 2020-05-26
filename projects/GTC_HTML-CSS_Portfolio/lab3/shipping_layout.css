@@ -1,0 +1,30 @@
+/*
+	Tutorial 3, Case Problem 3
+	Your Name: Jonathan Hudgins
+	Today's Date: 6/15/2019
+*/
+
+body {
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #c19b76;
+}
+
+h1 {
+	font: italic normal 150% "Cooper Black", serif;
+}
+
+h2, h3 {
+	color: white;
+	background-color: teal;
+}
+
+h4 {
+	font-variant: small-caps;
+}
+
+strong em {
+	color: green;
+	font-weight: 900;
+	font-style: normal;
+}

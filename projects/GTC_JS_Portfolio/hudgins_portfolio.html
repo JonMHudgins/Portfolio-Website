@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<script src="modernizr.custom.05819.js"></script>
+		<!-- 
+			Course Portfolio Final Project
+			Author: Jonathan Hudgins
+			Date: 4/24/2020
+		-->
+		<title>Jonathan Hudgins | JavaScript Portfolio</title>
+
+		<style>
+
+			body
+			{
+				font-size: 1.1em;
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: black;
+				background-image: url("images/body-background.png");
+				background-position: center;
+				background-attachment: fixed;
+				line-height: 1.25em;
+			}
+
+			*	
+			{
+				margin: 0;
+				padding: 0;
+			}
+		
+			#container	
+			{
+				width: 90%;
+				margin: 0 auto;
+				border: 1px solid;
+				background-color: RGB(232, 232, 232);
+			}
+	
+			header	
+			{ 
+				background-image: url("images/header-background.jpg");
+				background-size: cover;
+				background-color: black;
+			}
+	
+			header img 
+			{
+				width: 100%;
+			}
+	
+			header h1 
+			{
+				color: white;
+				line-height: 1.6em;
+				font-size: 2em;
+				font-family: Verdana, sans-serif;
+				text-align: center;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+			}
+	
+			header h2 
+			{
+				color: white;
+				font-size: 1.4em;
+				font-family: Verdana, sans-serif;
+				text-align: center;
+			}
+
+			header h3
+			{
+				color: white;
+				font-size: 1em;
+				font-family: Verdana, sans-serif;
+				text-align: center;
+				padding-top: 0.1em;
+				padding-bottom: 0.5em;
+			}
+	
+			#main_content 
+			{
+				width: 50%;
+				float: left;
+				background: #CCC;
+			}
+			
+			#main_content h3
+			{
+				font-size: 1.5em;
+				line-height: 1.5em;
+				padding-left: .5em;
+				border-bottom: solid thick black;
+				color: RGB(0, 75, 90);
+				text-align: left;
+			}
+			
+			#main_content h4
+			{
+				font-size: 1.2em;
+				padding: .1em 1em;
+				text-align: center;
+			}
+					
+			#main_content a 
+			{
+				text-decoration: none;
+			}
+
+			#main_content p
+			{
+				text-align: center;
+			}
+					
+			#left_panel	
+			{
+				width: 23%;
+				padding: 0.5%;
+				float: left;
+			}
+				
+			#left_panel p
+			{
+				margin-bottom: 1em;
+				text-indent: 1em;
+			}
+	
+			#left_panel img
+			{
+				width: 90%;
+			}
+
+			#left_panel ol 
+			{
+				margin-left: 1em;
+				padding-top: 0;
+				list-style-type: none;
+				list-style-position: outside;
+			}
+				
+			#left_panel ol li
+			{ 
+				margin: .6em 0; 
+			}
+			
+			#right_panel
+			{
+				width: 23%;
+				height: 100%;
+				padding: 0.5%;
+				color: black;
+				float: right;
+			}
+	
+			footer
+			{
+				margin-top: 2em;
+				border-top: solid thick black;
+				clear: both;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			h2
+			{
+				margin-bottom: 0.5em;
+				font-family: Verdana, sans-serif;
+				text-align: center;
+			}
+
+			img
+			{
+				margin: 0 auto;
+				border: solid thick black;
+				display: block;
+			}
+
+			.chap1, .chap2, .chap3, .chap4, .chap5, .chap6, .chap7, .chap8, .chap9, .chap10, .chap11, .chap12 
+			{
+   				display: none;
+   				padding: 1em 1em;
+			}
+
+			.main_first
+			{
+				border-top: solid thick black;
+			}
+
+			.main_next
+			{
+				border-top: solid thin black;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<section id="container">
+
+			<header>
+			
+				<h1>Jonathan Hudgins | JavaScript Portfolio</h1>
+				<h2>JavaScript Sixth Edition</h2>
+				<h3>Sasha Vodnik, Don Gosselin</h3>
+				
+			</header> 
+	
+			<section id="left_panel">
+		
+				<h2>About Me</h2>
+	
+				<p><img src="images/My_Face.jpeg" alt="Picture of my face"></p>
+	
+				<ol>
+					<li>Name<br>&nbsp;&nbsp;Jonathan Hudgins</li>
+					<li>Major<br>&nbsp;&nbsp;Computer Technology</li>
+					<li>Concentration<br>&nbsp;&nbsp;Programming</li>
+					<li>Expected Graduation<br>&nbsp;&nbsp;August 2020</li>
+					<li>Email<br>&nbsp;&nbsp;hudginsj@my.gvltec.edu</li>
+				</ol>
+	
+			</section> 
+	
+			<section id="main_content">
+			
+				<h3 class="main_first">Chapter 1 | Introduction to JavaScript</h3>
+					<div class="chap1">
+						<h4><a href="Chapter01/HandsOnProject1-1/index.htm" title="Click me!">Hands on Project 1-1</a></h4>
+						<p>Learning to use document.write() to add content to a web page.</p>
+						<h4><a href="Chapter01/HandsOnProject1-3/index.htm" title="Click me!">Hands on Project 1-3</a></h4>
+						<p>Learning to display an alert box when a button is pressed.</p>
+						<h4><a href="Chapter01/HandsOnProject1-5/index.htm" title="Click me!">Hands on Project 1-5</a></h4>
+						<p>Learning how to troubleshoot broken code to make it work.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 2 | Working with Functions, Data Types, and Operators</h3>
+					<div class="chap2">
+						<h4><a href="Chapter02/HandsOnProject2-1/index.htm" title="Click me!">Hands on Project 2-1</a></h4>
+						<p>Learning to create functions that interface with on screen html objects.</p>
+						<h4><a href="Chapter02/HandsOnProject2-3/index.htm" title="Click me!">Hands on Project 2-3</a></h4>
+						<p>Learning to combine event listeners with an alert box programmatically.</p>
+						<h4><a href="Chapter02/HandsOnProject2-5/index.htm" title="Click me!">Hands on Project 2-5</a></h4>
+						<p>Learning to use form elements as user input for function calculations and output.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 3 | Building Arrays and Controlling Flow</h3>
+					<div class="chap3">
+						<h4><a href="Chapter03/HandsOnProject3-1/index.htm" title="Click me!">Hands on Project 3-1</a></h4>
+						<p>Learning to work with arrays, and bringing compatibility to older browsers.</p>
+						<h4><a href="Chapter03/HandsOnProject3-3/index.htm" title="Click me!">Hands on Project 3-3</a></h4>
+						<p>Learning to populate an array, then display that information in a list on the page.</p>
+						<h4><a href="Chapter03/HandsOnProject3-5/index.htm" title="Click me!">Hands on Project 3-5</a></h4>
+						<p>Learning to take user input from an html form, add it to an array, then display that information using a switch statement.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 4 | Debugging and Error Handling</h3>
+					<div class="chap4">
+						<h4><a href="Chapter04/HandsOnProject4-1/tractor.htm" title="Click me!">Hands on Project 4-1</a></h4>
+						<p>Learning to start performing data validation and error handling.</p>
+						<h4><a href="Chapter04/HandsOnProject4-3/index.htm" title="Click me!">Hands on Project 4-3</a></h4>
+						<p>Another adventure in debugging bad code, now updated with arrays!</p>
+						<h4><a href="Chapter04/HandsOnProject4-5/index.htm" title="Click me!">Hands on Project 4-5</a></h4>
+						<p>Learning to debug more code, featuring bad math conversions.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 5 | Working with the DOM and DHTML</h3>
+					<div class="chap5">
+						<h4><a href="Chapter05/HandsOnProject5-1/index.htm" title="Click me!">Hands on Project 5-1</a></h4>
+						<p>Learning to work with the browser's Navigator object, and exploring multiple browsers.</p>
+						<h4><a href="Chapter05/HandsOnProject5-3/index.htm" title="Click me!">Hands on Project 5-3</a></h4>
+						<p>Learning to create a confirmation window, and setting it to automatically close after 5 seconds.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 6 | Enhancing and Validating Forms</h3>
+					<div class="chap6">
+						<h4><a href="Chapter06/HandsOnProject6-1/index.htm" title="Click me!">Hands on Project 6-1</a></h4>
+						<p>Learning to create data validation functions that work across all browsers.</p>
+						<h4><a href="Chapter06/HandsOnProject6-3/index.htm" title="Click me!">Hands on Project 6-3</a></h4>
+						<p>A continuation of 6-1, now including placeholder text and automatic focus changing.</p>
+						<h4><a href="Chapter06/HandsOnProject6-5/index.htm" title="Click me!">Hands on Project 6-5</a></h4>
+						<p>Learning to work with the select element's default, and more cross-platform data validation.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 7 | Using Object-Oriented JavaScript</h3>
+					<div class="chap7">
+						<h4><a href="Chapter07/HandsOnProject7-1/index.htm" title="Click me!">Hands on Project 7-1</a></h4>
+						<p>More work with functions, and an opening foray into object-oriented JavaScript.</p>
+						<h4><a href="Chapter07/HandsOnProject7-3/index.htm" title="Click me!">Hands on Project 7-3</a></h4>
+						<p>Another exploration of loops and arrays.</p>
+						<h4><a href="Chapter07/HandsOnProject7-5/index.htm" title="Click me!">Hands on Project 7-5</a></h4>
+						<p>A deeper dive into object-oriented JavaScript, using forms and user input.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 8 | Manipulating Data in Strings and Arrays</h3>
+					<div class="chap8">
+						<h4><a href="Chapter08/HandsOnProject8-1/index.htm" title="Click me!">Hands on Project 8-1</a></h4>
+						<p>Learning to take user input and use that input to generate new information (an account ID).</p>
+						<h4><a href="Chapter08/HandsOnProject8-3/index.htm" title="Click me!">Hands on Project 8-3</a></h4>
+						<p>Learning to use JavaScript regular expressions to compare and validate data.</p>
+						<h4><a href="Chapter08/HandsOnProject8-5/index.htm" title="Click me!">Hands on Project 8-5</a></h4>
+						<p>Learning to manipulate objects in the browser using user input.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 9 | Managing State Information and Security</h3>
+					<div class="chap9">
+						<h4><a href="Chapter09/HandsOnProject9-1/index.htm" title="Click me!">Hands on Project 9-1</a></h4>
+						<p>Learning to pass information between web pages.</p>
+						<h4><a href="Chapter09/HandsOnProject9-3/index.htm" title="Click me!">Hands on Project 9-3</a></h4>
+						<p>Learning to implement a secure login that remembers a username by using cookies.</p>
+						<h4><a href="Chapter09/HandsOnProject9-5/index.htm" title="Click me!">Hands on Project 9-5</a></h4>
+						<p>Learning to use Web Storage, and adding an expiration timer to cookies.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 10 | Programming for Touchscreens and Mobile Devices</h3>
+					<div class="chap10">
+						<h4><a href="Chapter10/HandsOnProject10-1/index.htm" title="Click me!">Hands on Project 10-1</a></h4>
+						<p>Learning to add support for touch events in supported browsers.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 11 | Updating Web Pages with Ajax</h3>
+					<div class="chap11">
+						<h4><a href="Chapter11/HandsOnProject11-5/address.htm" title="Click me!">Hands on Project 11-5</a></h4>
+						<p>Learning to work with Ajax requests, including error handling.</p>
+					</div>
+
+				<h3 class="main_next">Chapter 12 | Introduction to jQuery</h3>
+					<div class="chap12">
+
+						<h4><a href="Chapter12/HandsOnProject12-1/index.htm" title="Click me!">Hands on Project 12-1</a></h4>
+						<p>Learning to implement jQuery to display elements.</p>
+						<h4><a href="Chapter12/HandsOnProject12-3/index.htm" title="Click me!">Hands on Project 12-3</a></h4>
+						<p>Learning to use jQuery to validate form data.</p>
+				
+					</div>
+			
+			</section>
+			
+			<section id="right_panel">
+			
+				<h2>W3 CSS Validator Results</h2>
+				
+				<p>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+						<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+					</a>
+				</p>
+			
+			
+			</section> 
+	
+			<footer>
+			
+				<p>Jonathan Hudgins &#8756; IST 239 - Datum and JavaScript &#8756; Greenville Technical College &#8756; April 24, 2020</p>
+				
+			</footer> 
+		
+		</section>
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+	
+</html>

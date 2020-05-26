@@ -1,0 +1,28 @@
+body {
+  background: #333;
+}
+
+.navbar {
+  border-bottom: #12343b 3px solid;
+}
+
+#home-section,
+#contact-section {
+  background: url(../img/5kStarsBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home-section a {
+  color: #fff;
+}
+
+#web-design-body,
+#database-design-body {
+  background: #45808f;
+}
+
+#application-design-body {
+  background: #eed0b0;
+}

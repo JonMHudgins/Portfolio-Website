@@ -8,10 +8,18 @@ body {
 
 #home-section,
 #contact-section {
-  background: url(../img/5kStarsBackground.jpg);
+  background: url(../img/stars.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#resume-section {
+  background: url(../img/stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
 }
 
 #home-section a {

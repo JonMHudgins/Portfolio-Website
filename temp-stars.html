@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg
+      id="cont"
+      width="1920"
+      height="1080"
+      viewbox="0 0 1920 1080"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="1920" height="1080" fill="#262626" />
+    </svg>
+    <script>
+      var svgns = 'http://www.w3.org/2000/svg',
+        container = document.getElementById('cont');
+
+      var stars = 1000;
+      var sizeVariance = 0.9;
+      var starSize = 1.5;
+      var opacityVariance = 1;
+      var w = 1920;
+      var h = 1080;
+
+      var g = document.getElementById('group');
+
+      for (var i = 0; i < stars; i++) {
+        var x = getRandomNumber(0, w);
+        var y = getRandomNumber(0, h);
+        var r = getRandomNumber(
+          starSize - starSize * sizeVariance,
+          starSize + starSize * sizeVariance
+        );
+        var o = getRandomNumber(1 - opacityVariance, 1);
+        makeStar(x, y, r, o);
+      }
+
+      function makeStar(x, y, r, o) {
+        var circle = document.createElementNS(svgns, 'circle');
+        circle.setAttributeNS(null, 'cx', x);
+        circle.setAttributeNS(null, 'cy', y);
+        circle.setAttributeNS(null, 'r', r);
+        circle.setAttributeNS(
+          null,
+          'style',
+          'fill: #FFFFFF; fill-opacity: ' + o + ';'
+        );
+        container.appendChild(circle);
+      }
+
+      function getRandomNumber(min, max) {
+        var dist = max - min;
+        return min + Math.random() * dist;
+      }
+    </script>
+  </body>
+</html>

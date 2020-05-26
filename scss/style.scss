@@ -36,3 +36,11 @@ body {
 #application-design-body {
   background: #eed0b0;
 }
+
+@media screen and (max-width: 768px) {
+  #resume-section,
+  #portfolio-section,
+  #about-section {
+    height: auto !important;
+  }
+}

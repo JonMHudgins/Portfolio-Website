@@ -16,7 +16,7 @@ Inherits="contact" %>
     />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>JH.Dev Contact</title>
+    <title>Full-Stack Dreams | Contact</title>
   </head>
   <body>
     <!-- START HERE -->
@@ -46,10 +46,10 @@ Inherits="contact" %>
               <a href="resume.html" class="nav-link">Resume</a>
             </li>
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Portfolio</a>
+              <a href="portfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="index.html" class="nav-link">About</a>
+              <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
               <a href="contact.aspx" class="nav-link active">Contact</a>
@@ -64,48 +64,49 @@ Inherits="contact" %>
       <div class="container">
         <div class="row">
           <div class="col text-center">
-              <div class="card bg-info my-5">
-                  <div class="card-header">
-                      <h1 class="card-title text-white">Contact Me</h1>
-                      <span class="text-white mt-0">Response time is usually between 1-3
-              business days.</span>
-                  </div>
-            <div class="card-body">
-              <form id="contactForm" runat="server" class="my-2">
+            <div class="card bg-info my-5">
+              <div class="card-header">
+                <h1 class="card-title text-white">Contact Me</h1>
+                <span class="text-white mt-0"
+                  >Response time is usually between 1-3 business days.</span
+                >
+              </div>
+              <div class="card-body">
+                <form id="contactForm" runat="server" class="my-2">
                   <asp:RequiredFieldValidator
                     ID="nameValidator"
                     runat="server"
                     ErrorMessage="Name is required"
                     ControlToValidate="name"
                     Display="Dynamic"
-                      class="text-danger h4 float-right"
+                    class="text-danger h4 float-right"
                   >
                   </asp:RequiredFieldValidator>
-                <div class="row ml-5 pl-1">
+                  <div class="row ml-5 pl-1">
                     <h4 class="text-white">Name</h4>
-                </div>
-                <div id="fgName" runat="server" class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-success text-white">
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </div>
-                    <asp:TextBox
-                      id="name"
-                      class="form-control bg-light"
-                      runat="server"
-                    >
-                    </asp:TextBox>
                   </div>
-                </div>
+                  <div id="fgName" runat="server" class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-success text-white">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </div>
+                      <asp:TextBox
+                        id="name"
+                        class="form-control bg-light"
+                        runat="server"
+                      >
+                      </asp:TextBox>
+                    </div>
+                  </div>
                   <asp:RequiredFieldValidator
                     ID="emailValidator"
                     runat="server"
                     ErrorMessage="Email is required"
                     ControlToValidate="email"
                     Display="Dynamic"
-                      class="text-danger h4 float-right"
+                    class="text-danger h4 float-right"
                   >
                   </asp:RequiredFieldValidator>
                   <asp:RegularExpressionValidator
@@ -115,97 +116,97 @@ Inherits="contact" %>
                     ControlToValidate="email"
                     ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
                     Display="Dynamic"
-                      class="text-danger h4 float-right"
+                    class="text-danger h4 float-right"
                   ></asp:RegularExpressionValidator>
-                <div class="row ml-5 pl-1">
+                  <div class="row ml-5 pl-1">
                     <h4 class="text-white">Your Email</h4>
-                </div>
-                <div id="fgEmail" runat="server" class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-success text-white">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                    </div>
-                    <asp:TextBox
-                      id="email"
-                      class="form-control bg-light"
-                      runat="server"
-                    >
-                    </asp:TextBox>
                   </div>
-                </div>
+                  <div id="fgEmail" runat="server" class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-success text-white">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </div>
+                      <asp:TextBox
+                        id="email"
+                        class="form-control bg-light"
+                        runat="server"
+                      >
+                      </asp:TextBox>
+                    </div>
+                  </div>
                   <asp:RequiredFieldValidator
                     ID="subjectValidator"
                     runat="server"
                     ErrorMessage="Subject is required"
                     ControlToValidate="subject"
                     Display="Dynamic"
-                      class="text-danger h4 float-right"
+                    class="text-danger h4 float-right"
                   >
                   </asp:RequiredFieldValidator>
-                <div class="row ml-5 pl-1">
+                  <div class="row ml-5 pl-1">
                     <h4 class="text-white">Subject</h4>
-                </div>
-                <div id="fgSubject" runat="server" class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-success text-white">
-                        <i class="fas fa-envelope-open-text"></i>
-                      </span>
-                    </div>
-                    <asp:TextBox
-                      ID="subject"
-                      class="form-control bg-light"
-                      runat="server"
-                    ></asp:TextBox>
                   </div>
-                </div>
+                  <div id="fgSubject" runat="server" class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-success text-white">
+                          <i class="fas fa-envelope-open-text"></i>
+                        </span>
+                      </div>
+                      <asp:TextBox
+                        ID="subject"
+                        class="form-control bg-light"
+                        runat="server"
+                      ></asp:TextBox>
+                    </div>
+                  </div>
                   <asp:RequiredFieldValidator
                     ID="messageValidator"
                     runat="server"
                     ErrorMessage="Message is required"
                     ControlToValidate="message"
                     Display="Dynamic"
-                      class="text-danger h4 float-right"
+                    class="text-danger h4 float-right"
                   >
                   </asp:RequiredFieldValidator>
-                <div class="row ml-5 pl-1">
+                  <div class="row ml-5 pl-1">
                     <h4 class="text-white">Message</h4>
-                </div>
-                <div id="fgMessage" runat="server" class="form-group">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-success text-white">
-                        <i class="fas fa-pencil-alt"></i>
-                      </span>
-                    </div>
-                    <asp:TextBox
-                      ID="message"
-                      runat="server"
-                      class="form-control bg-light"
-                      Rows="5"
-                      TextMode="MultiLine"
-                    >
-                    </asp:TextBox>
                   </div>
-                </div>
-                <asp:Button
-                  ID="submitButton"
+                  <div id="fgMessage" runat="server" class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-success text-white">
+                          <i class="fas fa-pencil-alt"></i>
+                        </span>
+                      </div>
+                      <asp:TextBox
+                        ID="message"
+                        runat="server"
+                        class="form-control bg-light"
+                        Rows="5"
+                        TextMode="MultiLine"
+                      >
+                      </asp:TextBox>
+                    </div>
+                  </div>
+                  <asp:Button
+                    ID="submitButton"
+                    runat="server"
+                    text="Submit"
+                    class="btn btn-danger btn-block btn-lg text-white"
+                    OnClick="submitButton_Click"
+                  />
+                </form>
+                <h3
+                  id="contactLabel"
                   runat="server"
-                  text="Submit"
-                  class="btn btn-danger btn-block btn-lg text-white"
-                  OnClick="submitButton_Click"
-                />
-              </form>
-              <h3
-                id="contactLabel"
-                runat="server"
-                Visible="False"
-                class="display-4 text-white mb-3"
-              ></h3>
-            </div>
+                  Visible="False"
+                  class="display-4 text-white mb-3"
+                ></h3>
               </div>
+            </div>
           </div>
         </div>
       </div>

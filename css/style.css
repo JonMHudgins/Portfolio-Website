@@ -14,7 +14,9 @@ body {
   background-attachment: fixed;
 }
 
-#resume-section {
+#resume-section,
+#portfolio-section,
+#about-section {
   background: url(../img/stars.svg);
   background-repeat: no-repeat;
   background-size: cover;

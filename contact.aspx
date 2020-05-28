@@ -26,7 +26,7 @@ Inherits="contact" %>
       id="main-nav"
     >
       <div class="container">
-        <a href="home.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
           <img src="img/logo.png" width="50" height="50" alt="" />
           <h3 class="d-inline align-middle">JH.dev</h3>
         </a>
